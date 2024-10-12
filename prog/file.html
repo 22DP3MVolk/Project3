@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mans Portfolio</title>
+    <!-- Pareiza CSS faila sasaistīšana -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google fontu sasaistīšana -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Galvene ar navigācijas izvēlni -->
+    <header>
+        <div class="container">
+            <h1>Maksima Portfolio</h1>
+            <!-- Dark Mode slēdzis -->
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="#home">Sākums</a></li>
+                    <li><a href="#about">Par mani</a></li>
+                    <li><a href="#skills">Prasmes</a></li>
+                    <li><a href="#projects">Projekti</a></li>
+                    <li><a href="#contact">Kontakti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Galvenā sadaļa -->
+    <main>
+        <!-- Par mani sadaļa -->
+        <section id="about" class="about">
+            <h2>Par mani</h2>
+            <p>Esmu tīmekļa izstrādātājs ar pieredzi HTML, CSS , Mysql , Pyton , JavaScript</p>
+            <img src="https://cdn.discordapp.com/attachments/740209451889328160/1294337925609427065/1.jpg?ex=670aa5a1&is=67095421&hm=70c402eb3c9ce195662987d62b89d931e732df18571710cda471e64d0c94e99b&" alt="Mans foto Maksims">
+        </section>
+
+        <!-- Prasmes sadaļa -->
+        <section id="skills" class="skills">
+            <h2>Prasmes</h2>
+            <div class="skill-bar">
+                <p>HTML</p>
+                <div class="progress"><span style="width: 70%;"></span></div>
+            </div>
+            <div class="skill-bar">
+                <p>CSS</p>
+                <div class="progress"><span style="width: 40%;"></span></div>
+            </div>
+            <div class="skill-bar">
+                <p>JavaScript</p>
+                <div class="progress"><span style="width: 20%;"></span></div>
+            <div class="skill-bar">
+                <p>MYSQL</p>
+                <div class="progress"><span style="width: 10%;"></span></div>
+            </div>
+            <div class="skill-bar">
+                <p>Pyton</p>
+                <div class="progress"><span style="width: 80%;"></span></div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Projekti sadaļa ar kartītēm -->
+        <section id="projects" class="projects">
+            <h2>Projekti</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="projekts1.jpg" alt="Projekts 1">
+                    <h3>Projekts 1</h3>
+                    <p>Apraksts par projektu 1.</p>
+                    <button class="learn-more">Uzzināt vairāk</button>
+                </div>
+                <div class="card">
+                    <img src="projekts2.jpg" alt="Projekts 2">
+                    <h3>Projekts 2</h3>
+                    <p>Apraksts par projektu 2.</p>
+                    <button class="learn-more">Uzzināt vairāk</button>
+                </div>
+                <div class="card">
+                    <img src="projekts3.jpg" alt="Projekts 3">
+                    <h3>Projekts 3</h3>
+                    <p>Apraksts par projektu 3.</p>
+                    <button class="learn-more">Uzzināt vairāk</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Kontaktu sadaļa -->
+    <section id="contact" class="contact">
+        <h2>Kontakti</h2>
+        <p>Mana iela 46/34</p>
+        <p>E-pasts: MV00742@rvt.lv</p>
+    </section>
+
+      <!-- Kājene -->
+        <footer>
+            <p>&copy; 2024 Maxima Portfolio. Visi tiesības aizsargātas.</p>
+            <div class="social-buttons">
+                <a href="https://www.instagram.com/wooolf_23" target="_blank" class="social-btn instagram-btn">Instagram</a>
+                <a href="https://www.facebook.com/maksims.volkovs.73" target="_blank" class="social-btn facebook-btn">Facebook</a>
+                <a href="https://www.tiktok.com/@yoombfn" target="_blank" class="social-btn tiktok-btn">TikTok</a>
+            </div>
+        </footer>
+
+    <!-- Modālais logs -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Projekta detaļas</h2>
+            <p>Šeit ir detalizētāka informācija par projektu.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript faila sasaistīšana -->
+    <script src="joo.js"></script>
+</body>
+</html>%

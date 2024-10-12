@@ -1,0 +1,244 @@
+/* Pamata stils */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Prasmes sadaļa */
+.skill-bar {
+    margin-bottom: 15px;
+}
+
+.skill-bar .progress {
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    width: 100%;
+}
+
+.skill-bar .progress span {
+    display: block;
+    height: 100%;
+    background: #00bfff;
+}
+
+/* Kartītes */
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin-top: 15px;
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+button.learn-more {
+    padding: 10px 15px;
+    background-color: #00bfff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.learn-more:hover {
+    background-color: #007bff;
+}
+
+/* Modālais logs */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    width: 50%;
+}
+
+.modal .close {
+    float: right;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Responsivitāte */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Switch slēdža dizains */
+.switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #333;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Light mode (default) */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+header.dark-mode {
+    background-color: #111;
+}
+
+footer.dark-mode {
+    background-color: #111;
+}
+
+/* Pārējie tumšā režīma stili */
+.dark-mode .card {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .social-btn {
+    color: white;
+}
+
+/* Tumšā režīma efekts pogām */
+.dark-mode .social-btn.instagram-btn {
+    background-color: #833ab4;
+}
+
+.dark-mode .social-btn.facebook-btn {
+    background-color: #3b5998;
+}
+
+.dark-mode .social-btn.tiktok-btn {
+    background-color: #ff0050;
+}
